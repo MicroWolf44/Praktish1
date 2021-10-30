@@ -21,12 +21,13 @@ public class Main {
              * Rabota s menu
              */
             switch (numberMenu) {
-
-                case 1: // Dobavlenie novogo znaceniya
+                // Dobavlenie novogo znaceniya
+                case 1:
                     System.out.println("Vvedite pervoe slovo:");
                     slovo = new Scanner(System.in).nextLine();
                     System.out.println("Vvedite perevod:");
                     perevod = new Scanner(System.in).nextLine();
+                    //Proverka chto polya ne pustie
                     if (slovo.equals("") || perevod.equals("")) {
                         System.out.println("Vi ne vveli odno iz slov");
                         break;
@@ -35,6 +36,7 @@ public class Main {
                         base.dobavlenie(slovo, perevod);
                         break;
                     }
+                // Vihod iz programmi
                 case 0:
                     System.out.println("Vsego horoshego");
                     break;
